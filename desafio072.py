@@ -1,0 +1,37 @@
+#Crie um programa que tenha um tupla totalmente preenchida com 
+# uma contagem por extenso, de zero até vinte. 
+# Seu programa deverá ler um número pelo teclado (entre 0 e 20) 
+#e mostrá-lo por extenso.
+
+tupla = (
+    'zero',
+    'um',
+    'dois',
+    'tres',
+    'quatro',
+    'cinco',
+    'seis',
+    'sete',
+    'oito',
+    'nove',
+    'dez',
+    'onze',
+    'doze',
+    'treze',
+    'quartoza',
+    'quinze',
+    'desesseis',
+    'desessete',
+    'dezoito',
+    'dezenove',
+    'vinte',
+)
+
+n = int(input('Digite um número entre 0 e 20: '))
+
+while True:
+    if n not in range(0, 21):
+        n = int(input('Tente novamente. Digite um número entre 0 e 20: '))
+    else:
+        print(f'Você digitou o número {tupla[n]}.')
+        break
